@@ -1,0 +1,10 @@
+
+**/bert/
+**/myBert/
+**/mySave/
+**/__pycache__/
+
+
+**/*.pkl
+
+**/log.txt

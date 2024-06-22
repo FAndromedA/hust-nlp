@@ -11,10 +11,10 @@ from dataloader import Sentence
 
 def get_param():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--lr', type=float, default=0.005)
+    parser.add_argument('--lr', type=float, default=2e-5)
     parser.add_argument('--max_epoch', type=int, default=10)
-    parser.add_argument('--batch_size', type=int, default=30)
-    parser.add_argument('--cuda', action='store_true', default=False)
+    parser.add_argument('--batch_size', type=int, default=128)
+    parser.add_argument('--cuda', action='store_true', default=True)
     return parser.parse_args()
 
 
@@ -53,30 +53,17 @@ def entity_split(x, y, id2tag, entities, cur):
             start, end = -1, -1
 
 
-def head_tail_truncate(nested_list, head_length=128, tail_length=382):
-    for i, sublist in enumerate(nested_list):
-        if (len(sublist) > 510):
-            nested_list[i] = sublist[:head_length] + sublist[-tail_length:]
-    return nested_list
-
-
 if __name__ == '__main__':
     set_logger()
     args = get_param()
     use_cuda = args.cuda and torch.cuda.is_available()
-    with open('data/datasave.pkl', 'rb') as inp:
-        word2id = pickle.load(inp)
-        id2word = pickle.load(inp)
+    with open('data/mydatasave.pkl', 'rb') as inp:
         tag2id = pickle.load(inp)
         id2tag = pickle.load(inp)
         x_train = pickle.load(inp)
         y_train = pickle.load(inp)
         x_test = pickle.load(inp)
         y_test = pickle.load(inp)
-    x_train = head_tail_truncate(x_train)
-    y_train = head_tail_truncate(y_train)
-    x_test = head_tail_truncate(x_test)
-    y_test = head_tail_truncate(y_test)
     model = MyModel(tag2id)
 
     if use_cuda:
@@ -102,7 +89,7 @@ if __name__ == '__main__':
         drop_last=False,
         num_workers=6
     )
-    print("????")
+    # print("????")
     for epoch in range(args.max_epoch):
         step = 0
         log = []
@@ -120,7 +107,7 @@ if __name__ == '__main__':
             optimizer.step()
 
             step += 1
-            print(step)
+            # print(step)
             if step % 100 == 0:
                 logging.debug('epoch %d-step %d loss: %f' % (epoch, step, sum(log) / len(log)))
                 log = []

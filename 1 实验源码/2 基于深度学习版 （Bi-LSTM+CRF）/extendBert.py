@@ -47,19 +47,28 @@ if __name__ == '__main__':
     # print(list(new_tokens))
 
     tokenizer.add_tokens(list(new_tokens))
+    tokenizer.save_pretrained('./myBert')
     # print(len(tokenizer))
 
     # 训练 bert 嵌入
     model.resize_token_embeddings(len(tokenizer))
-    for param in model.bert.embeddings.word_embeddings.parameters():
-        param.requires_grad = False
-    model.bert.embeddings.word_embeddings.weight[old_vocab_size:].requires_grad = True
+    # for param in model.bert.embeddings.word_embeddings.parameters():
+    #     param.requires_grad = False
+    # model.bert.embeddings.word_embeddings.weight[old_vocab_size:].requires_grad = True
 
+    # 冻结BERT的底层参数，只训练顶部层
+    for name, param in model.named_parameters():
+        if name.startswith("bert.encoder.layer.11") or name.startswith("bert.pooler") or name.startswith("classifier"):
+            print(name)
+            param.requires_grad = True
+        else:
+            param.requires_grad = False
+    
     training_args = TrainingArguments(
         output_dir='./myBert',
         overwrite_output_dir=True,
         num_train_epochs=3,
-        per_device_train_batch_size=8,
+        per_device_train_batch_size=16,
         save_steps=10000,
         save_total_limit=2,
     )
@@ -80,5 +89,5 @@ if __name__ == '__main__':
     )
     # 训练模型
     trainer.train()
-    tokenizer.save_pretained('./myBert')
+    
     model.save_pretrained('./myBert')
