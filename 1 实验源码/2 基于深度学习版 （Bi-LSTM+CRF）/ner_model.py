@@ -29,22 +29,22 @@ class BertNer(nn.Module):
                 param.requires_grad = False
 
     def _get_bert_feat(self, sentence, mask):
-        # outputs = self.bert(sentence, attention_mask=mask)
-        # last_hidden_states = outputs.last_hidden_state
-        # lstm_out, _ = self.lstm(last_hidden_states)
-        # feats = self.hidden2tag(lstm_out)
-        # return feats
-        outputs = self.bert(sentence, attention_mask=mask.bool())
+        outputs = self.bert(sentence, attention_mask=mask)
         last_hidden_states = outputs.last_hidden_state
         lstm_out, _ = self.lstm(last_hidden_states)
-        
-        residual = self.residual_projection(lstm_out)
-        residual = self.BN(residual.transpose(1, 2)).transpose(1, 2)
-        residual = self.relu(residual)
-
-        final_out = self.relu(lstm_out + residual)
-        feats = self.hidden2tag(final_out)
+        feats = self.hidden2tag(lstm_out)
         return feats
+        # outputs = self.bert(sentence, attention_mask=mask.bool())
+        # last_hidden_states = outputs.last_hidden_state
+        # lstm_out, _ = self.lstm(last_hidden_states)
+        
+        # residual = self.residual_projection(lstm_out)
+        # residual = self.BN(residual.transpose(1, 2)).transpose(1, 2)
+        # residual = self.relu(residual)
+
+        # final_out = self.relu(lstm_out + residual)
+        # feats = self.hidden2tag(final_out)
+        # return feats
 
     def forward(self, sentence, tags, mask):
         # print(sentence.shape)

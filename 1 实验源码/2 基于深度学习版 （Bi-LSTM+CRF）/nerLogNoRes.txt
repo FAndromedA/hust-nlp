@@ -472,3 +472,22 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
 2024-06-24 00:25:45,426 INFO     precision: 0.959203
 2024-06-24 00:25:45,427 INFO     recall: 0.953646
 2024-06-24 00:25:45,427 INFO     fscore: 0.956416
+2024-06-24 00:26:34,538 DEBUG    epoch 28-step 100 loss: 0.378451
+2024-06-24 00:27:23,483 DEBUG    epoch 28-step 200 loss: 0.381449
+2024-06-24 00:28:16,353 DEBUG    epoch 28-step 300 loss: 0.391951
+2024-06-24 00:29:07,510 DEBUG    epoch 28-step 400 loss: 0.358392
+2024-06-24 00:29:58,176 DEBUG    epoch 28-step 500 loss: 0.346198
+2024-06-24 00:30:51,779 DEBUG    epoch 28-step 600 loss: 0.418069
+2024-06-24 00:31:08,886 INFO     precision: 0.955577
+2024-06-24 00:31:08,886 INFO     recall: 0.955577
+2024-06-24 00:31:08,886 INFO     fscore: 0.955577
+2024-06-24 00:31:59,772 DEBUG    epoch 29-step 100 loss: 0.345088
+2024-06-24 00:32:48,677 DEBUG    epoch 29-step 200 loss: 0.339054
+2024-06-24 00:33:40,803 DEBUG    epoch 29-step 300 loss: 0.366698
+2024-06-24 00:34:29,866 DEBUG    epoch 29-step 400 loss: 0.362020
+2024-06-24 00:35:23,439 DEBUG    epoch 29-step 500 loss: 0.360641
+2024-06-24 00:36:14,999 DEBUG    epoch 29-step 600 loss: 0.363625
+2024-06-24 00:36:31,380 INFO     precision: 0.939906
+2024-06-24 00:36:31,380 INFO     recall: 0.966683
+2024-06-24 00:36:31,380 INFO     fscore: 0.953106
+2024-06-24 00:36:32,350 INFO     model has been saved in  ./nerSave/model_epoch29.pkl
