@@ -15,6 +15,10 @@ class MyModel(nn.Module):
         self.tag2id = tag2id
         self.tagset_size = len(tag2id)
         self.lstm = nn.LSTM(self.embedding_dim, self.hidden_dim // 2, num_layers=1, bidirectional=True, batch_first=True)
+        
+        self.residual_projection = nn.Linear(self.hidden_dim, self.hidden_dim)
+        self.BN = nn.BatchNorm1d(self.hidden_dim)
+        self.relu = nn.ReLU()
         self.hidden2tag = nn.Linear(self.hidden_dim, self.tagset_size)
         self.crf = CRF(self.tagset_size, batch_first=True)
         # 冻结BERT的底层参数，只训练顶部层
@@ -22,17 +26,21 @@ class MyModel(nn.Module):
                 param.requires_grad = False
 
     def _get_bert_feat(self, sentence, mask):
-        # encoded_input = self.tokenizer(sentence,
-        #                           padding=True,
-        #                           truncation=True,
-        #                           return_tensors='pt')
-        # with torch.no_grad():
-        #     outputs = self.bert(input_ids=encoded_input['input_ids'],
-        #                         attention_mask=encoded_input['attention_mask'])
-        outputs = self.bert(sentence, attention_mask=mask)
+        # outputs = self.bert(sentence, attention_mask=mask)
+        # last_hidden_states = outputs.last_hidden_state
+        # lstm_out, _ = self.lstm(last_hidden_states)
+        # feats = self.hidden2tag(lstm_out)
+        # return feats
+        outputs = self.bert(sentence, attention_mask=mask.bool())
         last_hidden_states = outputs.last_hidden_state
         lstm_out, _ = self.lstm(last_hidden_states)
-        feats = self.hidden2tag(lstm_out)
+        
+        residual = self.residual_projection(lstm_out)
+        residual = self.BN(residual.transpose(1, 2)).transpose(1, 2)
+        residual = self.relu(residual)
+
+        final_out = self.relu(lstm_out + residual)
+        feats = self.hidden2tag(final_out)
         return feats
 
     def forward(self, sentence, tags, mask):

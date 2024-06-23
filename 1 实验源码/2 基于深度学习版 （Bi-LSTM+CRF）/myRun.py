@@ -12,8 +12,9 @@ from dataloader import Sentence
 def get_param():
     parser = argparse.ArgumentParser()
     parser.add_argument('--lr', type=float, default=2e-5)
-    parser.add_argument('--max_epoch', type=int, default=10)
+    parser.add_argument('--max_epoch', type=int, default=30)
     parser.add_argument('--batch_size', type=int, default=128)
+    parser.add_argument('--pre_pkl', type=int, default=-1)
     parser.add_argument('--cuda', action='store_true', default=True)
     return parser.parse_args()
 
@@ -64,7 +65,12 @@ if __name__ == '__main__':
         y_train = pickle.load(inp)
         x_test = pickle.load(inp)
         y_test = pickle.load(inp)
-    model = MyModel(tag2id)
+    if args.pre_pkl == -1:
+        model = MyModel(tag2id)
+    else :
+        path_name = f"./mySave/model_epoch{args.pre_pkl}.pkl"
+        model = torch.load(path_name)
+        logging.info("model has been loaded from %s" % path_name)
 
     if use_cuda:
         model = model.cuda()
@@ -90,7 +96,7 @@ if __name__ == '__main__':
         num_workers=6
     )
     # print("????")
-    for epoch in range(args.max_epoch):
+    for epoch in range(args.pre_pkl + 1, args.max_epoch):
         step = 0
         log = []
 
@@ -141,7 +147,7 @@ if __name__ == '__main__':
                 logging.info("recall: 0")
                 logging.info("fscore: 0")
             model.train()
-
-        path_name = "./mySave/model_epoch" + str(epoch) + ".pkl"
-        torch.save(model, path_name)
-        logging.info("model has been saved in  %s" % path_name)
+        if epoch % 10 == 9:
+            path_name = "./mySave/model_epoch" + str(epoch) + ".pkl"
+            torch.save(model, path_name)
+            logging.info("model has been saved in  %s" % path_name)

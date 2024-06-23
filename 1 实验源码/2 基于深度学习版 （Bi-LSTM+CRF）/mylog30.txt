@@ -1,0 +1,493 @@
+Some weights of BertModel were not initialized from the model checkpoint at ./myBert and are newly initialized: ['bert.pooler.dense.bias', 'bert.pooler.dense.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2024-06-23 02:54:53,069 DEBUG    bert.embeddings.word_embeddings.weight: torch.Size([21421, 768]), require_grad=False
+2024-06-23 02:54:53,069 DEBUG    bert.embeddings.position_embeddings.weight: torch.Size([512, 768]), require_grad=False
+2024-06-23 02:54:53,069 DEBUG    bert.embeddings.token_type_embeddings.weight: torch.Size([2, 768]), require_grad=False
+2024-06-23 02:54:53,069 DEBUG    bert.embeddings.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,069 DEBUG    bert.embeddings.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.0.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.1.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.1.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.1.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,070 DEBUG    bert.encoder.layer.1.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.1.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,071 DEBUG    bert.encoder.layer.2.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.2.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,072 DEBUG    bert.encoder.layer.3.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.3.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.3.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.3.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.4.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.5.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,073 DEBUG    bert.encoder.layer.5.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.5.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,074 DEBUG    bert.encoder.layer.6.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.6.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,075 DEBUG    bert.encoder.layer.7.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.7.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.7.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.7.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.7.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.7.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,076 DEBUG    bert.encoder.layer.8.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.9.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.10.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.10.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.10.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.10.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,077 DEBUG    bert.encoder.layer.10.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.10.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.self.query.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.self.query.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.self.key.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.self.key.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.self.value.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.self.value.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.output.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,078 DEBUG    bert.encoder.layer.11.attention.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.encoder.layer.11.intermediate.dense.weight: torch.Size([3072, 768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.encoder.layer.11.intermediate.dense.bias: torch.Size([3072]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.encoder.layer.11.output.dense.weight: torch.Size([768, 3072]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.encoder.layer.11.output.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.encoder.layer.11.output.LayerNorm.weight: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.encoder.layer.11.output.LayerNorm.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.pooler.dense.weight: torch.Size([768, 768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    bert.pooler.dense.bias: torch.Size([768]), require_grad=False
+2024-06-23 02:54:53,079 DEBUG    lstm.weight_ih_l0: torch.Size([512, 768]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.weight_hh_l0: torch.Size([512, 128]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.bias_ih_l0: torch.Size([512]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.bias_hh_l0: torch.Size([512]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.weight_ih_l0_reverse: torch.Size([512, 768]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.weight_hh_l0_reverse: torch.Size([512, 128]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.bias_ih_l0_reverse: torch.Size([512]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    lstm.bias_hh_l0_reverse: torch.Size([512]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    residual_projection.weight: torch.Size([256, 256]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    residual_projection.bias: torch.Size([256]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    BN.weight: torch.Size([256]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    BN.bias: torch.Size([256]), require_grad=True
+2024-06-23 02:54:53,079 DEBUG    hidden2tag.weight: torch.Size([4, 256]), require_grad=True
+2024-06-23 02:54:53,080 DEBUG    hidden2tag.bias: torch.Size([4]), require_grad=True
+2024-06-23 02:54:53,080 DEBUG    crf.start_transitions: torch.Size([4]), require_grad=True
+2024-06-23 02:54:53,080 DEBUG    crf.end_transitions: torch.Size([4]), require_grad=True
+2024-06-23 02:54:53,080 DEBUG    crf.transitions: torch.Size([4, 4]), require_grad=True
+/home/vipuser/miniconda3/envs/nlplab/lib/python3.10/site-packages/torchcrf/__init__.py:249: UserWarning: where received a uint8 condition tensor. This behavior is deprecated and will be removed in a future version of PyTorch. Use a boolean condition instead. (Triggered internally at ../aten/src/ATen/native/TensorCompare.cpp:530.)
+  score = torch.where(mask[i].unsqueeze(1), next_score, score)
+2024-06-23 02:56:24,410 DEBUG    epoch 0-step 100 loss: 59.892773
+2024-06-23 02:57:52,292 DEBUG    epoch 0-step 200 loss: 45.259351
+2024-06-23 02:59:20,550 DEBUG    epoch 0-step 300 loss: 31.649942
+2024-06-23 03:00:57,030 DEBUG    epoch 0-step 400 loss: 24.538434
+2024-06-23 03:02:25,651 DEBUG    epoch 0-step 500 loss: 21.028472
+2024-06-23 03:03:24,816 DEBUG    epoch 0-step 600 loss: 19.274998
+2024-06-23 03:03:35,429 INFO     precision: 0.843344
+2024-06-23 03:03:35,429 INFO     recall: 0.803688
+2024-06-23 03:03:35,429 INFO     fscore: 0.823039
+2024-06-23 03:03:36,298 INFO     model has been saved in  ./mySave/model_epoch0.pkl
+2024-06-23 03:04:51,910 DEBUG    epoch 1-step 100 loss: 22.246446
+2024-06-23 03:06:21,249 DEBUG    epoch 1-step 200 loss: 20.770169
+2024-06-23 03:07:46,485 DEBUG    epoch 1-step 300 loss: 20.009486
+2024-06-23 03:09:20,433 DEBUG    epoch 1-step 400 loss: 19.628754
+2024-06-23 03:10:44,315 DEBUG    epoch 1-step 500 loss: 18.765037
+2024-06-23 03:12:13,481 DEBUG    epoch 1-step 600 loss: 18.447878
+2024-06-23 03:12:28,693 INFO     precision: 0.871395
+2024-06-23 03:12:28,693 INFO     recall: 0.826644
+2024-06-23 03:12:28,693 INFO     fscore: 0.848430
+2024-06-23 03:13:55,680 DEBUG    epoch 2-step 100 loss: 17.897022
+2024-06-23 03:15:19,635 DEBUG    epoch 2-step 200 loss: 17.634105
+2024-06-23 03:16:54,075 DEBUG    epoch 2-step 300 loss: 17.343544
+2024-06-23 03:18:29,442 DEBUG    epoch 2-step 400 loss: 17.044599
+2024-06-23 03:19:56,865 DEBUG    epoch 2-step 500 loss: 16.720199
+2024-06-23 03:21:31,454 DEBUG    epoch 2-step 600 loss: 16.432590
+2024-06-23 03:21:46,905 INFO     precision: 0.882509
+2024-06-23 03:21:46,905 INFO     recall: 0.838233
+2024-06-23 03:21:46,906 INFO     fscore: 0.859801
+2024-06-23 03:23:12,803 DEBUG    epoch 3-step 100 loss: 16.257597
+2024-06-23 03:24:52,360 DEBUG    epoch 3-step 200 loss: 16.074690
+2024-06-23 03:26:18,272 DEBUG    epoch 3-step 300 loss: 15.815116
+2024-06-23 03:27:47,496 DEBUG    epoch 3-step 400 loss: 15.575457
+2024-06-23 03:29:23,068 DEBUG    epoch 3-step 500 loss: 15.534409
+2024-06-23 03:30:42,346 DEBUG    epoch 3-step 600 loss: 15.215306
+2024-06-23 03:30:57,443 INFO     precision: 0.885746
+2024-06-23 03:30:57,444 INFO     recall: 0.849933
+2024-06-23 03:30:57,444 INFO     fscore: 0.867470
+2024-06-23 03:32:27,334 DEBUG    epoch 4-step 100 loss: 15.163241
+2024-06-23 03:33:57,569 DEBUG    epoch 4-step 200 loss: 14.995083
+2024-06-23 03:35:24,584 DEBUG    epoch 4-step 300 loss: 14.693140
+2024-06-23 03:36:54,088 DEBUG    epoch 4-step 400 loss: 14.788721
+2024-06-23 03:38:25,058 DEBUG    epoch 4-step 500 loss: 14.606567
+2024-06-23 03:39:58,867 DEBUG    epoch 4-step 600 loss: 14.571645
+2024-06-23 03:40:16,241 INFO     precision: 0.889929
+2024-06-23 03:40:16,241 INFO     recall: 0.855561
+2024-06-23 03:40:16,242 INFO     fscore: 0.872407
+2024-06-23 03:41:59,026 DEBUG    epoch 5-step 100 loss: 14.370934
+2024-06-23 03:43:27,008 DEBUG    epoch 5-step 200 loss: 14.168843
+2024-06-23 03:44:57,449 DEBUG    epoch 5-step 300 loss: 14.347713
+2024-06-23 03:46:23,152 DEBUG    epoch 5-step 400 loss: 14.072140
+2024-06-23 03:47:54,217 DEBUG    epoch 5-step 500 loss: 14.090198
+2024-06-23 03:49:20,095 DEBUG    epoch 5-step 600 loss: 13.800780
+2024-06-23 03:49:37,600 INFO     precision: 0.893355
+2024-06-23 03:49:37,601 INFO     recall: 0.859153
+2024-06-23 03:49:37,601 INFO     fscore: 0.875920
+2024-06-23 03:51:09,164 DEBUG    epoch 6-step 100 loss: 13.699987
+2024-06-23 03:52:38,271 DEBUG    epoch 6-step 200 loss: 13.661818
+2024-06-23 03:54:17,583 DEBUG    epoch 6-step 300 loss: 13.703932
+2024-06-23 03:55:48,429 DEBUG    epoch 6-step 400 loss: 13.497220
+2024-06-23 03:57:17,065 DEBUG    epoch 6-step 500 loss: 13.490722
+2024-06-23 03:58:44,170 DEBUG    epoch 6-step 600 loss: 13.443615
+2024-06-23 03:59:00,826 INFO     precision: 0.896537
+2024-06-23 03:59:00,827 INFO     recall: 0.862744
+2024-06-23 03:59:00,827 INFO     fscore: 0.879316
+2024-06-23 04:00:32,398 DEBUG    epoch 7-step 100 loss: 13.487300
+2024-06-23 04:02:03,458 DEBUG    epoch 7-step 200 loss: 13.209608
+2024-06-23 04:03:36,345 DEBUG    epoch 7-step 300 loss: 13.137270
+2024-06-23 04:05:00,760 DEBUG    epoch 7-step 400 loss: 13.039546
+2024-06-23 04:06:31,319 DEBUG    epoch 7-step 500 loss: 13.034165
+2024-06-23 04:07:58,220 DEBUG    epoch 7-step 600 loss: 13.003070
+2024-06-23 04:08:13,988 INFO     precision: 0.898775
+2024-06-23 04:08:13,988 INFO     recall: 0.866595
+2024-06-23 04:08:13,988 INFO     fscore: 0.882392
+2024-06-23 04:09:41,175 DEBUG    epoch 8-step 100 loss: 12.980876
+2024-06-23 04:11:15,995 DEBUG    epoch 8-step 200 loss: 13.030073
+2024-06-23 04:12:37,586 DEBUG    epoch 8-step 300 loss: 12.547089
+2024-06-23 04:14:14,025 DEBUG    epoch 8-step 400 loss: 12.748251
+2024-06-23 04:15:39,353 DEBUG    epoch 8-step 500 loss: 12.690087
+2024-06-23 04:17:09,552 DEBUG    epoch 8-step 600 loss: 12.540872
+2024-06-23 04:17:28,470 INFO     precision: 0.899458
+2024-06-23 04:17:28,470 INFO     recall: 0.872149
+2024-06-23 04:17:28,470 INFO     fscore: 0.885593
+2024-06-23 04:18:58,969 DEBUG    epoch 9-step 100 loss: 12.459622
+2024-06-23 04:20:28,737 DEBUG    epoch 9-step 200 loss: 12.443972
+2024-06-23 04:21:57,082 DEBUG    epoch 9-step 300 loss: 12.574191
+2024-06-23 04:23:30,150 DEBUG    epoch 9-step 400 loss: 12.472656
+2024-06-23 04:24:59,749 DEBUG    epoch 9-step 500 loss: 12.341685
+2024-06-23 04:26:26,030 DEBUG    epoch 9-step 600 loss: 12.266059
+2024-06-23 04:26:42,373 INFO     precision: 0.902432
+2024-06-23 04:26:42,373 INFO     recall: 0.875333
+2024-06-23 04:26:42,373 INFO     fscore: 0.888676
+2024-06-23 04:28:11,319 DEBUG    epoch 10-step 100 loss: 12.289582
+2024-06-23 04:29:41,473 DEBUG    epoch 10-step 200 loss: 12.156571
+2024-06-23 04:31:15,027 DEBUG    epoch 10-step 300 loss: 12.052533
+2024-06-23 04:32:44,349 DEBUG    epoch 10-step 400 loss: 12.194527
+2024-06-23 04:34:16,106 DEBUG    epoch 10-step 500 loss: 12.018380
+2024-06-23 04:35:46,203 DEBUG    epoch 10-step 600 loss: 11.959011
+2024-06-23 04:36:02,502 INFO     precision: 0.904367
+2024-06-23 04:36:02,503 INFO     recall: 0.877110
+2024-06-23 04:36:02,503 INFO     fscore: 0.890530
+2024-06-23 04:36:03,332 INFO     model has been saved in  ./mySave/model_epoch10.pkl
+2024-06-23 04:37:32,579 DEBUG    epoch 11-step 100 loss: 11.887888
+2024-06-23 04:39:01,274 DEBUG    epoch 11-step 200 loss: 11.848835
+2024-06-23 04:40:32,617 DEBUG    epoch 11-step 300 loss: 11.680695
+2024-06-23 04:42:01,892 DEBUG    epoch 11-step 400 loss: 11.791710
+2024-06-23 04:43:34,229 DEBUG    epoch 11-step 500 loss: 11.802778
+2024-06-23 04:45:09,141 DEBUG    epoch 11-step 600 loss: 11.802202
+2024-06-23 04:45:26,203 INFO     precision: 0.906364
+2024-06-23 04:45:26,204 INFO     recall: 0.879517
+2024-06-23 04:45:26,204 INFO     fscore: 0.892739
+2024-06-23 04:46:58,509 DEBUG    epoch 12-step 100 loss: 11.677694
+2024-06-23 04:48:22,786 DEBUG    epoch 12-step 200 loss: 11.537713
+2024-06-23 04:49:54,092 DEBUG    epoch 12-step 300 loss: 11.557417
+2024-06-23 04:51:30,051 DEBUG    epoch 12-step 400 loss: 11.532007
+2024-06-23 04:52:58,652 DEBUG    epoch 12-step 500 loss: 11.542861
+2024-06-23 04:54:28,066 DEBUG    epoch 12-step 600 loss: 11.370627
+2024-06-23 04:54:45,286 INFO     precision: 0.908085
+2024-06-23 04:54:45,286 INFO     recall: 0.881591
+2024-06-23 04:54:45,287 INFO     fscore: 0.894642
+2024-06-23 04:56:15,997 DEBUG    epoch 13-step 100 loss: 11.328726
+2024-06-23 04:57:44,044 DEBUG    epoch 13-step 200 loss: 11.230351
+2024-06-23 04:59:09,947 DEBUG    epoch 13-step 300 loss: 11.203628
+2024-06-23 05:00:39,575 DEBUG    epoch 13-step 400 loss: 11.344175
+2024-06-23 05:02:10,244 DEBUG    epoch 13-step 500 loss: 11.205856
+2024-06-23 05:03:43,576 DEBUG    epoch 13-step 600 loss: 11.312092
+2024-06-23 05:03:58,542 INFO     precision: 0.909534
+2024-06-23 05:03:58,543 INFO     recall: 0.884108
+2024-06-23 05:03:58,543 INFO     fscore: 0.896641
+2024-06-23 05:05:28,990 DEBUG    epoch 14-step 100 loss: 11.153696
+2024-06-23 05:06:58,594 DEBUG    epoch 14-step 200 loss: 11.136626
+2024-06-23 05:08:21,692 DEBUG    epoch 14-step 300 loss: 11.103297
+2024-06-23 05:09:43,752 DEBUG    epoch 14-step 400 loss: 10.953116
+2024-06-23 05:11:17,748 DEBUG    epoch 14-step 500 loss: 11.043153
+2024-06-23 05:12:47,425 DEBUG    epoch 14-step 600 loss: 10.977651
+2024-06-23 05:13:06,049 INFO     precision: 0.910141
+2024-06-23 05:13:06,049 INFO     recall: 0.886552
+2024-06-23 05:13:06,049 INFO     fscore: 0.898192
+2024-06-23 05:14:32,392 DEBUG    epoch 15-step 100 loss: 10.892765
+2024-06-23 05:15:58,633 DEBUG    epoch 15-step 200 loss: 10.768692
+2024-06-23 05:17:28,048 DEBUG    epoch 15-step 300 loss: 10.860321
+2024-06-23 05:18:58,282 DEBUG    epoch 15-step 400 loss: 10.771903
+2024-06-23 05:20:22,661 DEBUG    epoch 15-step 500 loss: 10.732376
+2024-06-23 05:21:59,096 DEBUG    epoch 15-step 600 loss: 10.808864
+2024-06-23 05:22:14,864 INFO     precision: 0.911407
+2024-06-23 05:22:14,864 INFO     recall: 0.888663
+2024-06-23 05:22:14,864 INFO     fscore: 0.899891
+2024-06-23 05:23:39,804 DEBUG    epoch 16-step 100 loss: 10.563875
+2024-06-23 05:25:14,808 DEBUG    epoch 16-step 200 loss: 10.697790
+2024-06-23 05:26:46,730 DEBUG    epoch 16-step 300 loss: 10.651693
+2024-06-23 05:28:14,284 DEBUG    epoch 16-step 400 loss: 10.603617
+2024-06-23 05:29:35,006 DEBUG    epoch 16-step 500 loss: 10.480453
+2024-06-23 05:31:08,692 DEBUG    epoch 16-step 600 loss: 10.496707
+2024-06-23 05:31:27,320 INFO     precision: 0.911268
+2024-06-23 05:31:27,320 INFO     recall: 0.891699
+2024-06-23 05:31:27,320 INFO     fscore: 0.901377
+2024-06-23 05:32:59,222 DEBUG    epoch 17-step 100 loss: 10.541102
+2024-06-23 05:34:23,737 DEBUG    epoch 17-step 200 loss: 10.495478
+2024-06-23 05:35:52,201 DEBUG    epoch 17-step 300 loss: 10.460339
+2024-06-23 05:37:21,041 DEBUG    epoch 17-step 400 loss: 10.361488
+2024-06-23 05:38:43,528 DEBUG    epoch 17-step 500 loss: 10.233823
+2024-06-23 05:40:20,913 DEBUG    epoch 17-step 600 loss: 10.387741
+2024-06-23 05:40:36,424 INFO     precision: 0.913626
+2024-06-23 05:40:36,425 INFO     recall: 0.891773
+2024-06-23 05:40:36,425 INFO     fscore: 0.902567
+2024-06-23 05:42:05,179 DEBUG    epoch 18-step 100 loss: 10.323003
+2024-06-23 05:43:38,388 DEBUG    epoch 18-step 200 loss: 10.417147
+2024-06-23 05:45:07,312 DEBUG    epoch 18-step 300 loss: 10.177258
+2024-06-23 05:46:39,532 DEBUG    epoch 18-step 400 loss: 10.106586
+2024-06-23 05:48:07,172 DEBUG    epoch 18-step 500 loss: 10.178656
+2024-06-23 05:49:35,262 DEBUG    epoch 18-step 600 loss: 10.147740
+2024-06-23 05:49:52,362 INFO     precision: 0.915219
+2024-06-23 05:49:52,362 INFO     recall: 0.891736
+2024-06-23 05:49:52,362 INFO     fscore: 0.903325
+2024-06-23 05:51:21,308 DEBUG    epoch 19-step 100 loss: 10.179358
+2024-06-23 05:52:53,964 DEBUG    epoch 19-step 200 loss: 10.162250
+2024-06-23 05:54:18,632 DEBUG    epoch 19-step 300 loss: 10.025774
+2024-06-23 05:55:46,126 DEBUG    epoch 19-step 400 loss: 10.070696
+2024-06-23 05:57:09,425 DEBUG    epoch 19-step 500 loss: 9.949658
+2024-06-23 05:58:39,956 DEBUG    epoch 19-step 600 loss: 9.907106
+2024-06-23 05:58:55,741 INFO     precision: 0.914817
+2024-06-23 05:58:55,742 INFO     recall: 0.894291
+2024-06-23 05:58:55,742 INFO     fscore: 0.904437
+2024-06-23 06:00:21,034 DEBUG    epoch 20-step 100 loss: 9.940743
+2024-06-23 06:01:47,248 DEBUG    epoch 20-step 200 loss: 9.812887
+2024-06-23 06:03:12,921 DEBUG    epoch 20-step 300 loss: 9.856065
+2024-06-23 06:04:46,900 DEBUG    epoch 20-step 400 loss: 9.841075
+2024-06-23 06:06:22,721 DEBUG    epoch 20-step 500 loss: 9.892327
+2024-06-23 06:07:46,681 DEBUG    epoch 20-step 600 loss: 9.819599
+2024-06-23 06:08:06,661 INFO     precision: 0.915349
+2024-06-23 06:08:06,662 INFO     recall: 0.895624
+2024-06-23 06:08:06,662 INFO     fscore: 0.905379
+2024-06-23 06:08:07,510 INFO     model has been saved in  ./mySave/model_epoch20.pkl
+2024-06-23 06:09:32,914 DEBUG    epoch 21-step 100 loss: 9.679410
+2024-06-23 06:11:04,737 DEBUG    epoch 21-step 200 loss: 9.743032
+2024-06-23 06:12:35,263 DEBUG    epoch 21-step 300 loss: 9.729385
+2024-06-23 06:14:04,965 DEBUG    epoch 21-step 400 loss: 9.698159
+2024-06-23 06:15:32,567 DEBUG    epoch 21-step 500 loss: 9.758932
+2024-06-23 06:16:58,728 DEBUG    epoch 21-step 600 loss: 9.590651
+2024-06-23 06:17:14,700 INFO     precision: 0.917007
+2024-06-23 06:17:14,700 INFO     recall: 0.896771
+2024-06-23 06:17:14,701 INFO     fscore: 0.906776
+2024-06-23 06:18:49,173 DEBUG    epoch 22-step 100 loss: 9.717262
+2024-06-23 06:20:18,877 DEBUG    epoch 22-step 200 loss: 9.534859
+2024-06-23 06:21:41,436 DEBUG    epoch 22-step 300 loss: 9.436301
+2024-06-23 06:23:07,679 DEBUG    epoch 22-step 400 loss: 9.563966
+2024-06-23 06:24:35,081 DEBUG    epoch 22-step 500 loss: 9.460544
+2024-06-23 06:26:03,715 DEBUG    epoch 22-step 600 loss: 9.509714
+2024-06-23 06:26:21,337 INFO     precision: 0.918134
+2024-06-23 06:26:21,338 INFO     recall: 0.895698
+2024-06-23 06:26:21,338 INFO     fscore: 0.906777
+2024-06-23 06:27:52,422 DEBUG    epoch 23-step 100 loss: 9.491032
+2024-06-23 06:29:24,190 DEBUG    epoch 23-step 200 loss: 9.483513
+2024-06-23 06:30:52,472 DEBUG    epoch 23-step 300 loss: 9.400698
+2024-06-23 06:32:15,959 DEBUG    epoch 23-step 400 loss: 9.292869
+2024-06-23 06:33:48,670 DEBUG    epoch 23-step 500 loss: 9.320761
+2024-06-23 06:35:24,016 DEBUG    epoch 23-step 600 loss: 9.382425
+2024-06-23 06:35:42,042 INFO     precision: 0.917411
+2024-06-23 06:35:42,042 INFO     recall: 0.897845
+2024-06-23 06:35:42,043 INFO     fscore: 0.907522
+2024-06-23 06:37:24,488 DEBUG    epoch 24-step 100 loss: 9.290738
+2024-06-23 06:38:52,910 DEBUG    epoch 24-step 200 loss: 9.305327
+2024-06-23 06:40:21,742 DEBUG    epoch 24-step 300 loss: 9.205862
+2024-06-23 06:41:52,157 DEBUG    epoch 24-step 400 loss: 9.212012
+2024-06-23 06:43:13,816 DEBUG    epoch 24-step 500 loss: 9.218955
+2024-06-23 06:44:43,676 DEBUG    epoch 24-step 600 loss: 9.187704
+2024-06-23 06:44:59,299 INFO     precision: 0.917644
+2024-06-23 06:44:59,300 INFO     recall: 0.900622
+2024-06-23 06:44:59,300 INFO     fscore: 0.909054
+2024-06-23 06:46:33,673 DEBUG    epoch 25-step 100 loss: 9.173098
+2024-06-23 06:47:59,973 DEBUG    epoch 25-step 200 loss: 9.104541
+2024-06-23 06:49:28,753 DEBUG    epoch 25-step 300 loss: 9.018388
+2024-06-23 06:50:53,864 DEBUG    epoch 25-step 400 loss: 9.100471
+2024-06-23 06:52:20,842 DEBUG    epoch 25-step 500 loss: 9.028208
+2024-06-23 06:53:53,711 DEBUG    epoch 25-step 600 loss: 9.173660
+2024-06-23 06:54:13,250 INFO     precision: 0.919375
+2024-06-23 06:54:13,251 INFO     recall: 0.899733
+2024-06-23 06:54:13,251 INFO     fscore: 0.909448
+2024-06-23 06:55:39,449 DEBUG    epoch 26-step 100 loss: 9.039398
+2024-06-23 06:57:07,886 DEBUG    epoch 26-step 200 loss: 9.127870
+2024-06-23 06:58:45,147 DEBUG    epoch 26-step 300 loss: 8.940922
+2024-06-23 07:00:12,458 DEBUG    epoch 26-step 400 loss: 8.869275
+2024-06-23 07:01:42,171 DEBUG    epoch 26-step 500 loss: 8.939331
+2024-06-23 07:03:09,817 DEBUG    epoch 26-step 600 loss: 8.984193
+2024-06-23 07:03:25,330 INFO     precision: 0.918775
+2024-06-23 07:03:25,331 INFO     recall: 0.900881
+2024-06-23 07:03:25,331 INFO     fscore: 0.909740
+2024-06-23 07:04:57,483 DEBUG    epoch 27-step 100 loss: 8.916466
+2024-06-23 07:06:28,672 DEBUG    epoch 27-step 200 loss: 8.964418
+2024-06-23 07:08:01,480 DEBUG    epoch 27-step 300 loss: 8.856752
+2024-06-23 07:09:26,230 DEBUG    epoch 27-step 400 loss: 8.733939
+2024-06-23 07:10:52,971 DEBUG    epoch 27-step 500 loss: 8.826694
+2024-06-23 07:12:24,613 DEBUG    epoch 27-step 600 loss: 8.798681
+2024-06-23 07:12:41,414 INFO     precision: 0.920086
+2024-06-23 07:12:41,415 INFO     recall: 0.902473
+2024-06-23 07:12:41,415 INFO     fscore: 0.911195
+2024-06-23 07:14:09,822 DEBUG    epoch 28-step 100 loss: 8.818216
+2024-06-23 07:15:35,559 DEBUG    epoch 28-step 200 loss: 8.655442
+2024-06-23 07:17:08,181 DEBUG    epoch 28-step 300 loss: 8.642041
+2024-06-23 07:18:38,433 DEBUG    epoch 28-step 400 loss: 8.751426
+2024-06-23 07:20:10,487 DEBUG    epoch 28-step 500 loss: 8.783321
+2024-06-23 07:21:38,119 DEBUG    epoch 28-step 600 loss: 8.583092
+2024-06-23 07:21:56,337 INFO     precision: 0.920303
+2024-06-23 07:21:56,338 INFO     recall: 0.903436
+2024-06-23 07:21:56,338 INFO     fscore: 0.911792
+2024-06-23 07:23:17,620 DEBUG    epoch 29-step 100 loss: 8.575736
+2024-06-23 07:24:56,584 DEBUG    epoch 29-step 200 loss: 8.644796
+2024-06-23 07:26:24,764 DEBUG    epoch 29-step 300 loss: 8.615903
+2024-06-23 07:28:04,252 DEBUG    epoch 29-step 400 loss: 8.520876
+2024-06-23 07:29:31,808 DEBUG    epoch 29-step 500 loss: 8.603806
+2024-06-23 07:30:56,678 DEBUG    epoch 29-step 600 loss: 8.477049
+2024-06-23 07:31:12,181 INFO     precision: 0.920125
+2024-06-23 07:31:12,181 INFO     recall: 0.903806
+2024-06-23 07:31:12,181 INFO     fscore: 0.911893
