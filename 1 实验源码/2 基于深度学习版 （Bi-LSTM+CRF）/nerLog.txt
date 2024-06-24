@@ -216,8 +216,8 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
 2024-06-23 22:18:44,844 DEBUG    crf.start_transitions: torch.Size([21]), require_grad=True
 2024-06-23 22:18:44,844 DEBUG    crf.end_transitions: torch.Size([21]), require_grad=True
 2024-06-23 22:18:44,844 DEBUG    crf.transitions: torch.Size([21, 21]), require_grad=True
-/home/vipuser/miniconda3/envs/nlplab/lib/python3.10/site-packages/torchcrf/__init__.py:249: UserWarning: where received a uint8 condition tensor. This behavior is deprecated and will be removed in a future version of PyTorch. Use a boolean condition instead. (Triggered internally at ../aten/src/ATen/native/TensorCompare.cpp:530.)
-  score = torch.where(mask[i].unsqueeze(1), next_score, score)
+/home/vipuser/miniconda3/envs/nlplab/lib/python3.10/site-packages/torchcrf/__init__.py:249: UserWarning: where received a uint8 condition tensor. This behavior is deprecated and will be removed in a future version of PyTorch. Use a boolean condition instead. (Triggered intern2024-06-24 11:49:38,383 DEBUG    epoch 0-step 200 loss: 9.121409
+ torch.where(mask[i].unsqueeze(1), next_score, score)
 2024-06-23 22:19:38,024 DEBUG    epoch 0-step 100 loss: 28.911032
 2024-06-23 22:20:30,250 DEBUG    epoch 0-step 200 loss: 9.114168
 2024-06-23 22:21:20,413 DEBUG    epoch 0-step 300 loss: 6.378220

@@ -5,7 +5,7 @@ from transformers import BertTokenizer
 separator = ['、','，','。','！','？',',','.','!','?']
 
 if __name__ == '__main__':
-    model = torch.load('nerSave/pre_model_epoch29.pkl', map_location=torch.device('cuda'))
+    model = torch.load('nerSave/dp_model_epoch29.pkl', map_location=torch.device('cuda'))
     tokenizer = BertTokenizer.from_pretrained('./myBert')
     output = open('myner_result.txt', 'w', encoding='utf-8')
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")

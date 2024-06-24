@@ -153,6 +153,6 @@ if __name__ == '__main__':
                 logging.info("fscore: 0")
             model.train()
         if epoch % 10 == 9:
-            path_name = "./nerSave/res_model_epoch" + str(epoch) + ".pkl"
+            path_name = "./nerSave/dp_model_epoch" + str(epoch) + ".pkl"
             torch.save(model, path_name)
             logging.info("model has been saved in  %s" % path_name)
